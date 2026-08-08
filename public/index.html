@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dine - Place de marché</title>
+    <meta name="description" content="dine - Place de marché de vêtements. Découvrez et commandez facilement via WhatsApp. Livraison locale disponible." />
+    <meta name="keywords" content="dine, vêtements, marketplace, mode, acheter en ligne, WhatsApp" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta property="og:site_name" content="dine" />
+    <meta property="og:title" content="dine - Place de marché de vêtements" />
+    <meta property="og:description" content="Découvrez et commandez des vêtements facilement via WhatsApp sur dine." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">dine</div>
+      <nav>
+        <a href="#products">Produits</a>
+        <a href="#categories">Catégories</a>
+        <a href="admin.html">Administration</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Style frais, achat direct</span>
+          <h1>Découvrez notre dernière collection de vêtements</h1>
+          <p>Achetez facilement, filtrez par catégorie et discutez sur WhatsApp pour commander.</p>
+        </div>
+      </section>
+
+      <section class="controls" id="filters">
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="Rechercher par nom ou description" />
+        </div>
+        <div class="select-box">
+          <label for="categorySelect">Catégorie</label>
+          <select id="categorySelect">
+            <option value="all">Tous</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="grid" id="products"></section>
+    </main>
+
+    <footer>
+      <p>dine | Place de marché de vêtements | Chat WhatsApp prêt</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

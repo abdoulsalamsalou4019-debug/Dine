@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "Classic Denim Jacket",
+    "category": "Jackets",
+    "price": 25000,
+    "imageUrl": "https://via.placeholder.com/640x800?text=Denim+Jacket",
+    "description": "A timeless denim jacket with a clean fit and versatile style.",
+    "whatsapp": "0190620444"
+  },
+  {
+    "id": "2",
+    "name": "Streetwear Hoodie",
+    "category": "Sweatshirts",
+    "price": 18000,
+    "imageUrl": "https://via.placeholder.com/640x800?text=Streetwear+Hoodie",
+    "description": "Comfortable hoodie with bold colors and a relaxed fit.",
+    "whatsapp": "0190620444"
+  },
+  {
+    "id": "3",
+    "name": "Summer Printed Dress",
+    "category": "Dresses",
+    "price": 22000,
+    "imageUrl": "https://via.placeholder.com/640x800?text=Printed+Dress",
+    "description": "Lightweight dress with a fresh print perfect for sunny days.",
+    "whatsapp": "0190620444"
+  }
+]

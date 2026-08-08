@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion administrateur - dine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <div class="auth-card">
+        <h1>Connexion administrateur</h1>
+        <p>Seul le propriétaire peut accéder au panneau d'administration.</p>
+        <form action="/admin-login" method="POST">
+          <div class="form-row">
+            <label for="password">Mot de passe du propriétaire</label>
+            <input id="password" name="password" type="password" required />
+          </div>
+          <button type="submit" class="btn-primary">Se connecter</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+    </main>
+    <script>
+      const params = new URLSearchParams(location.search);
+      if (params.get('error')) {
+        document.getElementById('errorMessage').textContent = 'Mot de passe incorrect.';
+      }
+    </script>
+  </body>
+</html>

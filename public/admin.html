@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dine - Administration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar admin-bar">
+      <div class="brand">dine - Administration</div>
+      <nav>
+        <a href="index.html">Place de marché</a>
+      </nav>
+    </header>
+
+    <main class="admin-panel">
+      <section class="admin-section">
+        <h2>Ajouter / Modifier un produit</h2>
+        <form id="productForm">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="category">Catégorie</label>
+            <input id="category" name="category" required />
+          </div>
+          <div class="form-row">
+            <label for="price">Prix</label>
+            <input id="price" name="price" type="number" step="0.01" required />
+          </div>
+          <div class="form-row">
+            <label for="imageUrl">URL de l'image</label>
+            <input id="imageUrl" name="imageUrl" placeholder="https://..." />
+          </div>
+          <div class="form-row">
+            <label for="imageFile">Téléverser l'image</label>
+            <input id="imageFile" name="imageFile" type="file" accept="image/*" />
+            <small>Téléversez une image et l'URL sera automatiquement renseignée.</small>
+          </div>
+          <div class="form-row">
+            <label for="whatsapp">Numéro WhatsApp</label>
+            <input id="whatsapp" name="whatsapp" placeholder="0190620444" />
+          </div>
+          <div class="form-row textarea-row">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enregistrer le produit</button>
+          <button type="button" id="clearBtn" class="btn-secondary">Effacer</button>
+        </form>
+      </section>
+
+      <section class="admin-section">
+        <h2>Produits</h2>
+        <div id="adminProducts" class="admin-grid"></div>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
